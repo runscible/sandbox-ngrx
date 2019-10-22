@@ -1,0 +1,15 @@
+<ons-page>
+  <pre>{{ number$ | async }}</pre>
+  <div class="container">
+    <ons-button (click)="increment()">++</ons-button>
+    <ons-button (click)="decrement()">--</ons-button>
+    <ons-button (click)="reset()">==</ons-button>
+  </div>
+  <p>
+    valor local de texto en store
+    {{ text$ | async }}
+  </p>
+  <ons-input (valueChange)="edit()"></ons-input>
+  <ons-button (click)="edit()">save values</ons-button>
+</ons-page>
+

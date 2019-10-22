@@ -1,0 +1,19 @@
+.container{
+  display: flex;
+  justify-content: space-around;
+  flex-shrink: initial;
+}
+
+pre{
+  text-align: center;
+  width: 100%;
+  font-size: 3rem;
+}
+ons-page{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  ons-input{
+    width: 90%;
+  }
+}
