@@ -6,6 +6,7 @@ import {StoreModule} from '@ngrx/store';
 import {reducer} from '../reducers/edit.reducer';
 import { OnsenModule } from 'ngx-onsenui';
 import {FormsModule} from '@angular/forms';
+import {StoreDevtoolsModule} from '@ngrx/store-devtools';
 import {CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
 
 
@@ -16,7 +17,10 @@ import {CUSTOM_ELEMENTS_SCHEMA} from '@angular/core';
     StoreModule.forFeature('adapter', reducer),
     OnsenModule,
     FormsModule,
-    BrowserModule
+    BrowserModule,
+    StoreDevtoolsModule.instrument({
+      maxAge: 25
+    })
   ],
   exports: [AdapterComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA]

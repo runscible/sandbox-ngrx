@@ -1,5 +1,2 @@
-import {createAction, props} from '@ngrx/store';
-
-// export const edit = createAction(
-//                 '[Edit Component] edit',
-//                 props<{value: string}>());
+export const EDIT_TEXT = 'EDIT_TEXT';
+export const EDIT_FORM_1 = 'EDIT_FORM_1';

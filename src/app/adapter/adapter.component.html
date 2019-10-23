@@ -1,4 +1,22 @@
 <ons-page>
-    <ons-input></ons-input>
+    <ons-input (change)="edit($event.target.value)"></ons-input>
     <ons-button>save values</ons-button>
+    <ons-card *ngIf="localValue">
+      el valor del orto es: {{localValue}}
+    </ons-card>
+    <ons-card>
+      <ons-input
+      placeholder="puto dato 1"
+      [ngModel]="localFormVal1"
+      ></ons-input>
+      <ons-input
+        placeholder="puto dato 2"
+        [ngModel]="localFormVal2"
+      ></ons-input>
+      <ons-input
+        placeholder="puto dato 3"
+        [ngModel]="localFormVal3"
+      ></ons-input>
+      <ons-button (click)="submitData()">submit</ons-button>
+    </ons-card>
 </ons-page>

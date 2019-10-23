@@ -8,6 +8,8 @@ import { AdapterModule } from './adapter/adapter.module';
 import { OnsenModule } from 'ngx-onsenui';
 import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import {FormsModule} from '@angular/forms';
+import {StoreDevtoolsModule} from '@ngrx/store-devtools';
+
 
 @NgModule({
   declarations: [
@@ -20,6 +22,9 @@ import {FormsModule} from '@angular/forms';
     FormsModule,
     StoreModule.forRoot({}),
     AdapterModule,
+    StoreDevtoolsModule.instrument({
+      maxAge: 15
+    })
   ],
   providers: [],
   bootstrap: [AppComponent],
