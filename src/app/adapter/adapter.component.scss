@@ -1,7 +1,6 @@
 .container{
   display: flex;
   justify-content: space-around;
-  flex-shrink: initial;
 }
 
 pre{
@@ -15,5 +14,6 @@ ons-page{
   text-align: center;
   ons-input{
     width: 90%;
+    margin-bottom: 2rem;
   }
 }
